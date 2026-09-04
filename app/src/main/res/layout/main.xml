@@ -1,0 +1,59 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<Button
+			android:id="@+id/button_permission"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Grant Anki Permission"
+			android:textSize="12sp" />
+		<TextView
+			android:id="@+id/text_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Anki permission required"
+			android:textSize="12sp" />
+		<EditText
+			android:id="@+id/edittext_sheet_url"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="https://docs.google.com/spreadsheets/d/1Mu30exp_qPY69hRhcN6tpQzQzpwpGlh2GqEFWXiqJvY/edit\?usp=drivesdk"
+			android:textSize="12sp"
+			android:hint="Enter public Google Sheet URL" />
+		<EditText
+			android:id="@+id/edittext_deck_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:textSize="12sp"
+			android:hint="Anki Deck Name" />
+		<Button
+			android:id="@+id/button_sync"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Sync Deck"
+			android:textSize="12sp" />
+		<ProgressBar
+			android:id="@+id/progressbar_sync"
+			android:layout_width="match_parent"
+			android:layout_height="8dp"
+			android:padding="8dp"
+			android:indeterminate="false"
+			style="?android:progressBarStyleHorizontal" />
+	</LinearLayout>
+</LinearLayout>
